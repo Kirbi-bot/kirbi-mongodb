@@ -1,0 +1,59 @@
+{
+  "name": "kirbi-mongodb",
+  "description": "adds mongodb support to Kirbi",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "readme": "https://github.com/Richardson-Media-House/kirbi-mongodb#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richardson-Media-House/kirbi-mongodb.git"
+  },
+  "author": {
+    "name": "Joseph Moran III",
+    "email": "joseph.moraniii@gmail.com",
+    "url": "https://josephmoran.co"
+  },
+  "contributors": [
+    {
+      "name": "Matt Carroll",
+      "email": "admin@develogix.com",
+      "url": "https://develogix.com"
+    },
+    {
+      "name": "Nate Richardson",
+      "email": "hello@naterichardson.com",
+      "url": "https://naterichardson.com"
+    }
+  ],
+  "main": "mongodb.js",
+  "dependencies": {
+    "mongoose": "^4.11.10"
+  },
+  "bugs": {
+    "url": "https://github.com/Richardson-Media-House/kirbi-mongodb/issues"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "rules": {
+      "linebreak-style": "off",
+      "no-prototype-builtins": "warn",
+      "radix": "warn",
+      "guard-for-in": "warn",
+      "import/no-unresolved": "off",
+      "camelcase": "off",
+      "no-negated-condition": "warn",
+      "object-curly-spacing": [
+        "error",
+        "always",
+        {
+          "arraysInObjects": false
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "xo"
+  }
+}
