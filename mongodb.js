@@ -27,7 +27,7 @@ module.exports = function (Kirbi) {
 	}
 
 	// Set the connection.
-	Kirbi.Databases.mongodb = Mongoose.connection;
+	Kirbi.Databases.mongodb = Mongoose;
 
 	const defaultDatabase = Kirbi.Config.databases.default;
 	if (!defaultDatabase || defaultDatabase === 'mongodb') {
