@@ -2,8 +2,8 @@ const Mongoose = require('mongoose');
 
 module.exports = function (Kirbi) {
 	// Make sure there is a proper configuration value.
-	if (!Kirbi.Config) {
-		throw new Error('Kirbi does not have a config.json file.');
+	if (!Kirbi.Config.databases) {
+		throw new Error('There is no database settings specified in the config file.');
 	} else if (!Kirbi.Config.databases.mongodb) {
 		throw new Error('There is no mongodb settings specified in the config file.');
 	} else if (!Kirbi.Config.databases.mongodb.connection) {
